@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="15dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/identity_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_lock_24"
+        tools:baselineAlignBottom="false"
+        android:contentDescription="@string/secure_icon" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="18dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/identity_title_sub_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_and_surname" />
+
+    <EditText
+        android:id="@+id/age_input"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="177dp"
+        android:background="@drawable/radius"
+        android:ems="10"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:inputType="number"
+        android:hint="@string/age"
+        app:layout_constraintBottom_toTopOf="@+id/continue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height_input"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/height_input"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/radius"
+        android:inputType="numberDecimal"
+        android:hint="@string/height"
+        app:layout_constraintBottom_toTopOf="@+id/age_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identity_title_sub_2"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/identity_title_sub_2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/a_bit_more_personal_we_know_but_it_s_confidential_enter_your_height_and_age_below"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/height_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/identity_title_sub"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/enter_your_personal_information_below_so_that_we_can_get_to_know_you_more"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_and_surname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identity_title" />
+
+    <TextView
+        android:id="@+id/identity_title"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/identity"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/identity_title_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/name_and_surname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identity_title_sub"
+        android:gravity="bottom" >
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/radius"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:hint="@string/name"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginEnd="10dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="161dp"
+            android:importantForAutofill="no" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="?android:attr/listDivider" />
+
+        <EditText
+            android:id="@+id/surname_input"
+            android:background="@drawable/radius"
+            android:layout_width="0dp"
+            android:layout_marginStart="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:hint="@string/surname"
+            android:importantForAutofill="no" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="0"
+        android:text="@string/button_continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_input"
+        app:layout_editor_absoluteX="100dp"
+        app:layout_editor_absoluteY="100dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

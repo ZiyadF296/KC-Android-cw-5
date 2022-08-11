@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CW5</string>
+    <string name="secure_icon">Secure Icon</string>
+    <string name="age">Age</string>
+    <string name="height">Height</string>
+    <string name="a_bit_more_personal_we_know_but_it_s_confidential_enter_your_height_and_age_below">A bit more personal, we know, but it\'s confidential ;) Enter your height, and age below.</string>
+    <string name="enter_your_personal_information_below_so_that_we_can_get_to_know_you_more">Enter your personal information below so that we can get to know you more!</string>
+    <string name="identity">Identity</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="button_continue">Continue</string>
+    <string name="hello">Hello,</string>
+    <string name="if_you_think_this_is_cool_then_uh_oh_you_haven_t_seen_what_kuwait_codes_can_accomplish">If you think this is cool then uh-oh. You haven\'t seen what Kuwait Codes can accomplish!</string>
+    <string name="back">Back</string>
+    <string name="_00">00</string>
+    <string name="age_caps">AGE</string>
+    <string name="height_caps">HEIGHT</string>
+</resources>
